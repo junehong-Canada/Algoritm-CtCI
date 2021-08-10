@@ -14,9 +14,13 @@
 - Edit the string starting from the end and working backwards.
 - Use character arrays, because Java strings are immutable.
 
-1.4 palindrome Permutation: Given a string, write a function to check if it is a permutation of a palindrome. A palindrome is a word or phrase that is the same forwards and backwards. A permutation is a rearrangement of letters. The palindrome does not need to be limited to just dictionary words.
+1.4 palindrome Permutation: Given a string, write a function to check if it is a permutation of a palindrome.
+A palindrome is a word or phrase that is the same forwards and backwards. 
+A permutation is a rearrangement of letters.
+The palindrome does not need to be limited to just dictionary words.
 - Input: Tact Coa
 - Output: True (permutations: "taco cat", "atco cta", etc. )
+-> Given a string, determine if a permutation of string could form a palindrome.
 
 1.5 One Away: There are three types of edits that can be performed on strings: insert a character, remove a character, or replace a character. Given two strings, write a function to check if they are one edit (or zero edits) away.
 - pale, ple true
