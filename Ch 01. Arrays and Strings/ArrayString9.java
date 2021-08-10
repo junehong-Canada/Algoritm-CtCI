@@ -1,5 +1,5 @@
-class Solution {
-
+public class ArrayString9 {
+  // 1.9 String Rotation
   public static boolean isSubstring(String big, String small){
       if( big.indexOf(small) >= 0 )
         return true;
@@ -7,7 +7,6 @@ class Solution {
         return false;
   }
 
-  // 1.9 String Rotation
   public static boolean isRotation(String s1, String s2) {
       int len = s1.length();
       if(len == s2.length() && len > 0){
@@ -16,14 +15,16 @@ class Solution {
       }
       return false;
   }
-}
 
-public class ArrayString {
   public static void main(String[] args) {
 
     // 1.9 String Rotation
-    System.out.println(Solution.isRotation("apple", "pleap"));
-    System.out.println(Solution.isRotation("waterbottle", "erbottlewat"));
-    System.out.println(Solution.isRotation("camera", "macera"));
+    String[][] pairs = {{"apple", "pleap"}, {"waterbottle", "erbottlewat"}, {"camera", "macera"}};
+    for(String[] pair : pairs) {
+      String word1 = pair[0];
+      String word2 = pair[1];
+      boolean is_rotation = isRotation(word1, word2);
+      System.out.println(word1 + ", " + word2 + ": " + is_rotation);
+    }
   }
 }

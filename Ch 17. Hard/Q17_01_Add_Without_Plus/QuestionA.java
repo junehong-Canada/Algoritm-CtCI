@@ -1,4 +1,4 @@
-package Q17_01_Add_Without_Plus;
+// package Q17_01_Add_Without_Plus;
 
 public class QuestionA {
 
@@ -8,7 +8,7 @@ public class QuestionA {
 		int carry = (a & b) << 1; // carry, but don�t add
 		return add(sum, carry); // recurse
 	}
-	
+
 	public static void main(String[] args) {
 		int a = Integer.MAX_VALUE - 50;
 		int b = 92;

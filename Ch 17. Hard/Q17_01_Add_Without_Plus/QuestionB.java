@@ -1,17 +1,17 @@
-package Q17_01_Add_Without_Plus;
+// package Q17_01_Add_Without_Plus;
 
 public class QuestionB {
 
 	public static int add(int a, int b) {
 		while (b != 0) {
 			int sum = a ^ b; // add without carrying
-			int carry = (a & b) << 1; // carry, but don't add			
+			int carry = (a & b) << 1; // carry, but don't add
 			a = sum;
 			b = carry;
 		}
 		return a;
 	}
-	
+
 	public static void main(String[] args) {
 		int a = Integer.MAX_VALUE - 50;
 		int b = 92;
